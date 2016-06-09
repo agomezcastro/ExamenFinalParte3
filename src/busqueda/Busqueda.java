@@ -13,7 +13,7 @@ public class Busqueda {
         }
         Busqueda ejemplo = new Busqueda();
         int indice = ejemplo.busquedaBinaria(numeros, numValor, 0, numeros.length - 1);
-        System.out.println("El indice del valor"+numValor+ "es: " + indice);
+        System.out.println("El indice del valor "+numValor+ " es: " + indice);
     }
 
     public int busquedaBinaria(int[] listado, int clave, int posInicial, int posFinal) {
