@@ -6,15 +6,18 @@ public class Busqueda {
 
     public static void main(String[] args) {
         Scanner num = new Scanner(System.in);
-        int numArray;
+        int numArray=0;
         System.out.println("Introduzca un numero para el array:");
         numArray= num.nextInt();
+        int numValor=0;
+        System.out.println("Introduzca numero que quieres averiguar:");
+        numValor=num.nextInt();
         int[] numeros = new int[numArray];
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = i * 5;
         }
         Busqueda ejemplo = new Busqueda();
-        int indice = ejemplo.busquedaBinaria(numeros, numArray, 0, numeros.length - 1);
+        int indice = ejemplo.busquedaBinaria(numeros, numValor, 0, numeros.length - 1);
         System.out.println("El indice del valor "+numArray + " es: " + indice);
     }
 
